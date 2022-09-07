@@ -17,6 +17,7 @@ import {
   Text,
   useColorScheme,
   View,
+  NativeModules,
 } from 'react-native';
 
 import {
@@ -63,6 +64,10 @@ const App = () => {
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
+
+  // const useNative = () => {
+  //   NativeModules.
+  // }
 
   return (
     <SafeAreaView style={backgroundStyle}>

@@ -249,7 +249,9 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation fileTree(dir: "libs", include: ["*.jar", "*.aar"])
+    // implementation files('libs/debug-1.0.15', ext:'aar')
+     implementation project(':bureauSdk')
 
     //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules
